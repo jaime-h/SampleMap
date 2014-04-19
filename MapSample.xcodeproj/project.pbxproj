@@ -21,6 +21,10 @@
 		6FBD84BA1901A35400DEA253 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBD849C1901A35400DEA253 /* UIKit.framework */; };
 		6FBD84C21901A35400DEA253 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6FBD84C01901A35400DEA253 /* InfoPlist.strings */; };
 		6FBD84C41901A35400DEA253 /* MapSampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD84C31901A35400DEA253 /* MapSampleTests.m */; };
+		6FBD84D61901B08100DEA253 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6FBD84D51901B08100DEA253 /* MapKit.framework */; };
+		6FBD84D91901E89C00DEA253 /* ResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD84D81901E89C00DEA253 /* ResultsTableViewController.m */; };
+		6FBD84DC1901E8D500DEA253 /* ResultsTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD84DB1901E8D500DEA253 /* ResultsTableCell.m */; };
+		6FBD84DF1901EF1600DEA253 /* RouteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6FBD84DE1901EF1600DEA253 /* RouteViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +57,13 @@
 		6FBD84BF1901A35400DEA253 /* MapSampleTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MapSampleTests-Info.plist"; sourceTree = "<group>"; };
 		6FBD84C11901A35400DEA253 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		6FBD84C31901A35400DEA253 /* MapSampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapSampleTests.m; sourceTree = "<group>"; };
+		6FBD84D51901B08100DEA253 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		6FBD84D71901E89C00DEA253 /* ResultsTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableViewController.h; sourceTree = "<group>"; };
+		6FBD84D81901E89C00DEA253 /* ResultsTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableViewController.m; sourceTree = "<group>"; };
+		6FBD84DA1901E8D500DEA253 /* ResultsTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ResultsTableCell.h; sourceTree = "<group>"; };
+		6FBD84DB1901E8D500DEA253 /* ResultsTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ResultsTableCell.m; sourceTree = "<group>"; };
+		6FBD84DD1901EF1600DEA253 /* RouteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouteViewController.h; sourceTree = "<group>"; };
+		6FBD84DE1901EF1600DEA253 /* RouteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RouteViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBD84D61901B08100DEA253 /* MapKit.framework in Frameworks */,
 				6FBD849B1901A35400DEA253 /* CoreGraphics.framework in Frameworks */,
 				6FBD849D1901A35400DEA253 /* UIKit.framework in Frameworks */,
 				6FBD84991901A35400DEA253 /* Foundation.framework in Frameworks */,
@@ -101,6 +113,7 @@
 		6FBD84971901A35400DEA253 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				6FBD84D51901B08100DEA253 /* MapKit.framework */,
 				6FBD84981901A35400DEA253 /* Foundation.framework */,
 				6FBD849A1901A35400DEA253 /* CoreGraphics.framework */,
 				6FBD849C1901A35400DEA253 /* UIKit.framework */,
@@ -115,8 +128,14 @@
 				6FBD84A71901A35400DEA253 /* AppDelegate.h */,
 				6FBD84A81901A35400DEA253 /* AppDelegate.m */,
 				6FBD84AA1901A35400DEA253 /* Main.storyboard */,
+				6FBD84DD1901EF1600DEA253 /* RouteViewController.h */,
+				6FBD84DE1901EF1600DEA253 /* RouteViewController.m */,
 				6FBD84AD1901A35400DEA253 /* ViewController.h */,
 				6FBD84AE1901A35400DEA253 /* ViewController.m */,
+				6FBD84D71901E89C00DEA253 /* ResultsTableViewController.h */,
+				6FBD84D81901E89C00DEA253 /* ResultsTableViewController.m */,
+				6FBD84DA1901E8D500DEA253 /* ResultsTableCell.h */,
+				6FBD84DB1901E8D500DEA253 /* ResultsTableCell.m */,
 				6FBD84B01901A35400DEA253 /* Images.xcassets */,
 				6FBD849F1901A35400DEA253 /* Supporting Files */,
 			);
@@ -249,6 +268,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6FBD84DC1901E8D500DEA253 /* ResultsTableCell.m in Sources */,
+				6FBD84D91901E89C00DEA253 /* ResultsTableViewController.m in Sources */,
+				6FBD84DF1901EF1600DEA253 /* RouteViewController.m in Sources */,
 				6FBD84AF1901A35400DEA253 /* ViewController.m in Sources */,
 				6FBD84A91901A35400DEA253 /* AppDelegate.m in Sources */,
 				6FBD84A51901A35400DEA253 /* main.m in Sources */,
@@ -456,6 +478,7 @@
 				6FBD84C91901A35400DEA253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		6FBD84CA1901A35400DEA253 /* Build configuration list for PBXNativeTarget "MapSampleTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +487,7 @@
 				6FBD84CC1901A35400DEA253 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <MapKit/MapKit.h>
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <MKMapViewDelegate>
+
+@property (weak, nonatomic) IBOutlet MKMapView *mapView;
+@property (weak, nonatomic) IBOutlet UITextField *searchText;
+
+@property (strong, nonatomic) NSMutableArray *matchingItems;
+
+- (IBAction)zoomIn:(id)sender;
+- (IBAction)changeMapType:(id)sender;
+- (IBAction)textFieldReturn:(id)sender;
 
 @end
